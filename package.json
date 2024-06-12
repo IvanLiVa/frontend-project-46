@@ -1,0 +1,30 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "\"Difference Calculator – a project that compares and finds differences between two data structures, such as configuration files. This project is suitable for experienced developers, as it involves complex architectural decisions, writing automated tests, and using functional programming. It also includes working with tree data structures and recursive algorithms, which provides an in-depth learning experience.\"",
+  "main": "index.js",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanLiVa"
+  },
+  "author": "Litvinov Ivan",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
