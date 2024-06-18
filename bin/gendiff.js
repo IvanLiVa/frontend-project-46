@@ -4,6 +4,7 @@ import { program } from 'commander';
 import fs from 'fs';
 import parseData from '../src/parser.js';
 import { getAbsolutePath, getFileExtension } from '../index.js';
+import genDiff from '../src/gendifffunc.js';
 
 program
   .name('gendiff')
@@ -20,6 +21,7 @@ program
     const format2 = getFileExtension(filePath2);
     const obj1 = parseData(fileContent1, format1);
     const obj2 = parseData(fileContent2, format2);
-    return { obj1, obj2 };
+    console.log(genDiff(obj1, obj2));
+    return genDiff(obj1, obj2);
   });
 program.parse();
