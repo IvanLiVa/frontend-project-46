@@ -14,7 +14,8 @@ function getAbsolutePath(filePath) {
   }
   // проверяем  существует ли фаил
   if (!fs.existsSync(absoluteFilePath)) {
-    throw new Error(`File not found: ${absoluteFilePath}`);
+    console.log(`File not found: ${absoluteFilePath}`);
+    return null;
   }
 
   return absoluteFilePath;
