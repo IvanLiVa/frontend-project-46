@@ -13,7 +13,11 @@
 [![Node CI](https://github.com/IvanLiVa/frontend-project-46/actions/workflows/nodejs.yml/badge.svg)](https://github.com/IvanLiVa/frontend-project-46/actions/workflows/nodejs.yml)
 
 
-## Demonstration asciinema
+## 🎥 Demo: Asciinema
 
+## 📋 JSON Difference
 [![asciicast](https://asciinema.org/a/4zK085i6LcEpA9BEvWts3dkNc.png)](https://asciinema.org/a/4zK085i6LcEpA9BEvWts3dkNc)
+
+## 📘 YAML Difference
+[![asciicast](https://asciinema.org/a/RqLVBmdKupvLLXFrYTXCTY2Jm.png)](https://asciinema.org/a/RqLVBmdKupvLLXFrYTXCTY2Jm)
 

@@ -9,6 +9,9 @@ const parseData = (data, format) => {
     case '.yml':
       parsingDate = yaml.load(data);
       return parsingDate;
+    case '.yaml':
+      parsingDate = yaml.load(data);
+      return parsingDate;
     default:
       console.log('Unknown format:', format);
       return null;
