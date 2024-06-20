@@ -1,13 +1,9 @@
 import { getAbsolutePath, getFileExtension } from '../index.js';
 
-const absolutePath = '/home/username_bolivarli/frontend-project-46/file1.json';
+const absolutePath = getAbsolutePath('file1.json');
 
 test('test AbsolutePath ()', () => {
-  const expectPath = getAbsolutePath(absolutePath);
-  const extension = '.json';
-  const expectExtension = getFileExtension(absolutePath);
-  expect(absolutePath).toEqual(expectPath);
-  expect(extension).toEqual(expectExtension);
+  expect(absolutePath).toEqual(getAbsolutePath(absolutePath));
 });
 
 test('test relativePath ()', () => {
@@ -16,8 +12,13 @@ test('test relativePath ()', () => {
   expect(absolutePath).toEqual(expectPath);
 });
 
-test('test AbsolutePath ()', () => {
+test('test  otExist ()', () => {
   const relativePath = 'notExist.json';
   const expectPath = getAbsolutePath(relativePath);
   expect(expectPath).toBeNull();
+});
+
+test('test extension ()', () => {
+  const file = getAbsolutePath('file1.json');
+  expect('.json').toEqual(getFileExtension(file));
 });
