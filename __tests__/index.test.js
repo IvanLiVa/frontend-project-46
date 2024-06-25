@@ -7,18 +7,13 @@ test('test AbsolutePath ()', () => {
 });
 
 test('test relativePath ()', () => {
-  const relativePath = 'file1.json';
-  const expectPath = getAbsolutePath(relativePath);
-  expect(absolutePath).toEqual(expectPath);
+  expect(absolutePath).toEqual(getAbsolutePath('file1.json'));
 });
 
 test('test  otExist ()', () => {
-  const relativePath = 'notExist.json';
-  const expectPath = getAbsolutePath(relativePath);
-  expect(expectPath).toBeNull();
+  expect(getAbsolutePath('notExist.json')).toBeNull();
 });
 
 test('test extension ()', () => {
-  const file = getAbsolutePath('file1.json');
-  expect('.json').toEqual(getFileExtension(file));
+  expect(getFileExtension(getAbsolutePath('file1.json'))).toEqual('.json');
 });

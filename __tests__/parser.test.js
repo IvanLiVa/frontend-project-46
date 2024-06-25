@@ -8,21 +8,19 @@ const __dirname = dirname(__filename);
 
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8').trim();
+const expectObject = parseData(readFile('fileA1.json'), '.json');
 
-test('test function parseData()', () => {
-  const fileContent = readFile('fileD1.yaml');
-  const fileData = parseData(fileContent, '.yaml');
-  const expectOblect = {
-    host: 'hexlet.io',
-    timeout: 50,
-    proxy: '123.234.53.22',
-    follow: false,
-  };
-  expect(fileData).toEqual(expectOblect);
+test('test function parseData().yml', () => {
+  const fileData = parseData(readFile('fileC1.yml'), '.yml');
+  expect(fileData).toEqual(expectObject);
 });
 
-test('test function parseData(),Unknown format: ', () => {
-  const fileContent = readFile('expectA.txt');
-  const fileData = parseData(fileContent, '.txt');
+test('test function parseData().yaml', () => {
+  const fileData = parseData(readFile('fileYamlforTest.yaml'), '.yaml');
+  expect(fileData).toEqual(expectObject);
+});
+
+test('test function parseData() Unknown format: ', () => {
+  const fileData = parseData(readFile('expectC.txt'), '.txt');
   expect(fileData).toBeNull();
 });

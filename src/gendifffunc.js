@@ -1,24 +1,27 @@
 import _ from 'lodash';
 
 const genDiff = (data1, data2) => {
-  const keys1 = Object.keys(data1);
-  const keys2 = Object.keys(data2);
-  const keys = _.union(keys1, keys2).sort();
-  const result = [];
-  keys.forEach((key) => {
-    if (!Object.hasOwnProperty.call(data1, key)) {
-      result.push(`  + ${key}: ${data2[key]}`);
-    } else if (!Object.hasOwnProperty.call(data2, key)) {
-      result.push(`  - ${key}: ${data1[key]}`);
-    } else if (data1[key] !== data2[key]) {
-      result.push(`  - ${key}: ${data1[key]}`);
-      result.push(`  + ${key}: ${data2[key]}`);
-    } else {
-      result.push(`    ${key}: ${data1[key]}`);
+  const keys = _.union(Object.keys(data1), Object.keys(data2)).sort();
+  return keys.map((key) => {
+    if (!_.has(data2, key)) {
+      return { key, type: 'removed', value: data1[key] };
     }
+    if (!_.has(data1, key)) {
+      return { key, type: 'added', value: data2[key] };
+    }
+    if (_.isObject(data1[key]) && _.isObject(data2[key])) {
+      return { key, type: 'nested', children: genDiff(data1[key], data2[key]) };
+    }
+    if (!_.isEqual(data1[key], data2[key])) {
+      return {
+        key,
+        type: 'updated',
+        oldValue: data1[key],
+        newValue: data2[key],
+      };
+    }
+    return { key, type: 'unchanged', value: data1[key] };
   });
-  const diffString = `{\n${result.join('\n')}\n}`;
-  return diffString;
 };
 
 export default genDiff;
