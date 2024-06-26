@@ -23,3 +23,6 @@
 
 ## 📘 Recursive file comparison 
 [![asciicast](https://asciinema.org/a/7a6x7H1zfHAMy4tstp8AZ4mkz.png)](https://asciinema.org/a/7a6x7H1zfHAMy4tstp8AZ4mkz)
+
+## 📘 Flat format
+[![asciicast]( https://asciinema.org/a/Byr066SklxBQDKeKjUbC2jrFX.png)]( https://asciinema.org/a/Byr066SklxBQDKeKjUbC2jrFX)

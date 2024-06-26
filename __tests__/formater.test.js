@@ -1,4 +1,4 @@
-import stylish from '../src/stylish.js';
+import { stylish } from '../formatters/index.js';
 
 test('Tests stylish ', () => {
   const testDiff = [
