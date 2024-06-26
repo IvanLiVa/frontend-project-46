@@ -26,3 +26,6 @@
 
 ## 📘 Flat format
 [![asciicast]( https://asciinema.org/a/Byr066SklxBQDKeKjUbC2jrFX.png)]( https://asciinema.org/a/Byr066SklxBQDKeKjUbC2jrFX)
+
+## 📘 Json format
+[![asciicast]( https://asciinema.org/a/kO6ixNYcrCOUeiKKHdaOxIhYi.png)]( https://asciinema.org/a/kO6ixNYcrCOUeiKKHdaOxIhYi)
