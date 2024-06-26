@@ -28,8 +28,7 @@ const formatPlain = (diff) => {
           break;
         case 'updated':
           result.push(
-            `Property '${currentPath}' was updated. From ${formatValue(item.oldValue)} to
-             ${formatValue(item.newValue)}`,
+            `Property '${currentPath}' was updated. From ${formatValue(item.oldValue)} to ${formatValue(item.newValue)}`,
           );
           break;
         case 'nested':
