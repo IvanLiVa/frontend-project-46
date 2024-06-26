@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { stylish, formatPlain } from '../formatters/index.js';
+import { stylish, formatPlain, formatJson } from '../formatters/index.js';
 
 const difResult = (data1, data2) => {
   const keys = _.union(Object.keys(data1), Object.keys(data2)).sort();
@@ -36,6 +36,9 @@ const genDiff = (file1, file2, formatName = 'stylish') => {
   }
   if (formatName === 'plain') {
     diff = formatPlain(diff);
+  }
+  if (formatName === 'json') {
+    diff = formatJson(diff);
   }
   return diff;
 };
