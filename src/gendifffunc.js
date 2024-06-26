@@ -1,8 +1,7 @@
 import _ from 'lodash';
 import { stylish, formatPlain, formatJson } from '../formatters/index.js';
 
-const getKey = (data1, data2) =>
-  _.union(Object.keys(data1), Object.keys(data2)).sort();
+const getKey = (data1, data2) => _.union(Object.keys(data1), Object.keys(data2)).sort();
 
 const difResult = (data1, data2) => {
   const keys = getKey(data1, data2);
