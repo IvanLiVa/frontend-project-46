@@ -1,8 +1,10 @@
 import _ from 'lodash';
 import { stylish, formatPlain, formatJson } from '../formatters/index.js';
 
+const getKey = (data1, data2) => _.union(Object.keys(data1), Object.keys(data2)).sort();
+
 const difResult = (data1, data2) => {
-  const keys = _.union(Object.keys(data1), Object.keys(data2)).sort();
+  const keys = getKey(data1, data2);
   const diff = keys.reduce((acc, key) => {
     if (!_.has(data2, key)) {
       acc.push({ key, type: 'removed', value: data1[key] });
