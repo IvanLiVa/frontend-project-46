@@ -20,9 +20,7 @@ const formatPlain = (diff) => {
       switch (item.type) {
         case 'added':
           result.push(
-            `Property '${currentPath}' was added with value: ${formatValue(
-              item.value,
-            )}`,
+            `Property '${currentPath}' was added with value: ${formatValue(item.value)}`,
           );
           break;
         case 'removed':
@@ -30,9 +28,8 @@ const formatPlain = (diff) => {
           break;
         case 'updated':
           result.push(
-            `Property '${currentPath}' was updated. From ${formatValue(
-              item.oldValue,
-            )} to ${formatValue(item.newValue)}`,
+            `Property '${currentPath}' was updated. From ${formatValue(item.oldValue)} to
+             ${formatValue(item.newValue)}`,
           );
           break;
         case 'nested':

@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
+
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8').trim();
 
 test('test function gendiff() json(stylish, plain)', () => {
@@ -43,4 +44,17 @@ test('test function getdiff() yml (stylish)', () => {
   const diffPlain = genDiff(fileA1Data, fileA2Data, 'plain');
   expect(diff).toBe(expectedDiff);
   expect(expectPlain).toBe(diffPlain);
+});
+
+test('test function gendiff() json', () => {
+  const fileA1Data = parseData(
+    readFile('fileA1.json'),
+    getFileExtension('fileA1.json'),
+  );
+  const fileA2Data = parseData(
+    readFile('fileA2.json'),
+    getFileExtension('fileA2.json'),
+  );
+  const diffJson = genDiff(fileA1Data, fileA2Data, 'json');
+  expect(typeof diffJson).toBe('string');
 });
