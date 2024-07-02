@@ -10,40 +10,33 @@ const formatValue = (value) => {
   return value;
 };
 
-const formatPlain = (diff) => {
-  const result = [];
+const formatPlain = (diffTree) => {
+  const iter = (nodes, path = '') => {
+    const lines = nodes.flatMap((node) => {
+      const {
+        key, type, value, oldValue, newValue, children,
+      } = node;
 
-  const iter = (data, path = '') => {
-    data.forEach((item) => {
-      const currentPath = path ? `${path}.${item.key}` : item.key;
-
-      switch (item.type) {
-        case 'added':
-          result.push(
-            `Property '${currentPath}' was added with value: ${formatValue(item.value)}`,
-          );
-          break;
-        case 'removed':
-          result.push(`Property '${currentPath}' was removed`);
-          break;
-        case 'updated':
-          result.push(
-            `Property '${currentPath}' was updated. From ${formatValue(item.oldValue)} to ${formatValue(item.newValue)}`,
-          );
-          break;
+      switch (type) {
         case 'nested':
-          iter(item.children, currentPath);
-          break;
+          return iter(children, `${path}${key}.`);
+        case 'added':
+          return `Property '${path}${key}' was added with value: ${formatValue(value)}`;
+        case 'removed':
+          return `Property '${path}${key}' was removed`;
+        case 'updated':
+          return `Property '${path}${key}' was updated. From ${formatValue(oldValue)} to ${formatValue(newValue)}`;
         case 'unchanged':
-          break;
+          return [];
         default:
-          throw new Error(`Unknown type: ${item.type}`);
+          throw new Error(`Unknown type: ${type}`);
       }
     });
+
+    return lines;
   };
 
-  iter(diff);
-  return result.join('\n');
+  return iter(diffTree).join('\n');
 };
 
 export default formatPlain;

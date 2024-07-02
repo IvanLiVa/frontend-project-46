@@ -1,9 +1,7 @@
 import _ from 'lodash';
 
-const getKey = (data1, data2) => _.union(Object.keys(data1), Object.keys(data2)).sort();
-
 const buildTree = (data1, data2) => {
-  const keys = getKey(data1, data2);
+  const keys = _.sortBy(_.union(Object.keys(data1), Object.keys(data2)));
 
   return keys.map((key) => {
     switch (true) {
