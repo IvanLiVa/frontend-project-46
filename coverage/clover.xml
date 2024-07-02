@@ -1,57 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1719426489687" clover="3.2.0">
-  <project timestamp="1719426489687" name="All files">
-    <metrics statements="207" coveredstatements="207" conditionals="52" coveredconditionals="52" methods="12" coveredmethods="12" elements="271" coveredelements="271" complexity="0" loc="207" ncloc="207" packages="3" files="7" classes="7"/>
-    <package name="frontend-project-46">
-      <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <file name="index.js" path="/home/username_bolivarli/frontend-project-46/index.js">
-        <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+<coverage generated="1719920183066" clover="3.2.0">
+  <project timestamp="1719920183066" name="All files">
+    <metrics statements="206" coveredstatements="206" conditionals="53" coveredconditionals="53" methods="14" coveredmethods="14" elements="273" coveredelements="273" complexity="0" loc="206" ncloc="206" packages="2" files="7" classes="7"/>
+    <package name="src">
+      <metrics statements="88" coveredstatements="88" conditionals="19" coveredconditionals="19" methods="7" coveredmethods="7"/>
+      <file name="buildTree.js" path="/home/username_bolivarli/frontend-project-46/src/buildTree.js">
+        <metrics statements="42" coveredstatements="42" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="35" type="stmt"/>
+        <line num="7" count="35" type="stmt"/>
+        <line num="8" count="35" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="126" type="stmt"/>
+        <line num="10" count="126" type="stmt"/>
+        <line num="11" count="126" type="stmt"/>
+        <line num="12" count="126" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="15" count="126" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="35" type="stmt"/>
+        <line num="17" count="35" type="stmt"/>
+        <line num="18" count="126" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="28" type="stmt"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="21" count="28" type="stmt"/>
+        <line num="22" count="28" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
+        <line num="24" count="28" type="stmt"/>
+        <line num="25" count="126" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="28" type="stmt"/>
+        <line num="27" count="28" type="stmt"/>
+        <line num="28" count="28" type="stmt"/>
+        <line num="29" count="28" type="stmt"/>
+        <line num="30" count="28" type="stmt"/>
+        <line num="31" count="28" type="stmt"/>
+        <line num="32" count="28" type="stmt"/>
+        <line num="33" count="126" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="21" type="stmt"/>
+        <line num="35" count="126" type="stmt"/>
+        <line num="36" count="126" type="stmt"/>
+        <line num="37" count="126" type="stmt"/>
+        <line num="38" count="126" type="stmt"/>
+        <line num="39" count="35" type="stmt"/>
+        <line num="40" count="35" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
       </file>
-    </package>
-    <package name="frontend-project-46.formatters">
-      <metrics statements="102" coveredstatements="102" conditionals="28" coveredconditionals="28" methods="6" coveredmethods="6"/>
-      <file name="index.js" path="/home/username_bolivarli/frontend-project-46/formatters/index.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/home/username_bolivarli/frontend-project-46/src/index.js">
+        <metrics statements="27" coveredstatements="27" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
-      <file name="json.js" path="/home/username_bolivarli/frontend-project-46/formatters/json.js">
+      <file name="parser.js" path="/home/username_bolivarli/frontend-project-46/src/parser.js">
+        <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="15" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="6" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.formatters">
+      <metrics statements="118" coveredstatements="118" conditionals="34" coveredconditionals="34" methods="7" coveredmethods="7"/>
+      <file name="index.js" path="/home/username_bolivarli/frontend-project-46/src/formatters/index.js">
+        <metrics statements="20" coveredstatements="20" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="json.js" path="/home/username_bolivarli/frontend-project-46/src/formatters/json.js">
         <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
       </file>
-      <file name="plain.js" path="/home/username_bolivarli/frontend-project-46/formatters/plain.js">
-        <metrics statements="47" coveredstatements="47" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
+      <file name="plain.js" path="/home/username_bolivarli/frontend-project-46/src/formatters/plain.js">
+        <metrics statements="49" coveredstatements="49" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -65,43 +148,45 @@
         <line num="11" count="6" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="36" type="cond" truecount="2" falsecount="0"/>
-        <line num="19" count="36" type="stmt"/>
-        <line num="20" count="36" type="stmt"/>
-        <line num="21" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="37" type="stmt"/>
+        <line num="20" count="37" type="stmt"/>
+        <line num="21" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="22" count="10" type="stmt"/>
         <line num="23" count="10" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
         <line num="25" count="10" type="stmt"/>
-        <line num="26" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="27" count="4" type="stmt"/>
         <line num="28" count="4" type="stmt"/>
-        <line num="29" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="30" count="8" type="stmt"/>
         <line num="31" count="8" type="stmt"/>
         <line num="32" count="8" type="stmt"/>
         <line num="33" count="8" type="stmt"/>
-        <line num="34" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="35" count="8" type="stmt"/>
         <line num="36" count="8" type="stmt"/>
-        <line num="37" count="36" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="38" count="6" type="stmt"/>
-        <line num="39" count="36" type="stmt"/>
-        <line num="40" count="10" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="43" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
+        <line num="39" count="37" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="37" type="stmt"/>
+        <line num="42" count="11" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
       </file>
-      <file name="stylish.js" path="/home/username_bolivarli/frontend-project-46/formatters/stylish.js">
-        <metrics statements="47" coveredstatements="47" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <file name="stylish.js" path="/home/username_bolivarli/frontend-project-46/src/formatters/stylish.js">
+        <metrics statements="46" coveredstatements="46" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -141,102 +226,13 @@
         <line num="37" count="8" type="stmt"/>
         <line num="38" count="37" type="cond" truecount="1" falsecount="0"/>
         <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="37" type="stmt"/>
+        <line num="40" count="37" type="stmt"/>
+        <line num="41" count="11" type="stmt"/>
         <line num="42" count="11" type="stmt"/>
         <line num="43" count="11" type="stmt"/>
         <line num="44" count="11" type="stmt"/>
-        <line num="45" count="11" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="frontend-project-46.src">
-      <metrics statements="79" coveredstatements="79" conditionals="18" coveredconditionals="18" methods="4" coveredmethods="4"/>
-      <file name="gendifffunc.js" path="/home/username_bolivarli/frontend-project-46/src/gendifffunc.js">
-        <metrics statements="58" coveredstatements="58" conditionals="13" coveredconditionals="13" methods="3" coveredmethods="3"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="25" type="stmt"/>
-        <line num="9" count="25" type="stmt"/>
-        <line num="10" count="25" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="90" type="stmt"/>
-        <line num="12" count="90" type="stmt"/>
-        <line num="13" count="90" type="stmt"/>
-        <line num="14" count="90" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="10" type="stmt"/>
-        <line num="16" count="10" type="stmt"/>
-        <line num="17" count="90" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="25" type="stmt"/>
-        <line num="19" count="25" type="stmt"/>
-        <line num="20" count="90" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="20" type="stmt"/>
-        <line num="22" count="20" type="stmt"/>
-        <line num="23" count="20" type="stmt"/>
-        <line num="24" count="20" type="stmt"/>
-        <line num="25" count="20" type="stmt"/>
-        <line num="26" count="20" type="stmt"/>
-        <line num="27" count="90" type="cond" truecount="1" falsecount="0"/>
-        <line num="28" count="20" type="stmt"/>
-        <line num="29" count="20" type="stmt"/>
-        <line num="30" count="20" type="stmt"/>
-        <line num="31" count="20" type="stmt"/>
-        <line num="32" count="20" type="stmt"/>
-        <line num="33" count="20" type="stmt"/>
-        <line num="34" count="20" type="stmt"/>
-        <line num="35" count="90" type="cond" truecount="1" falsecount="0"/>
-        <line num="36" count="15" type="stmt"/>
-        <line num="37" count="90" type="stmt"/>
-        <line num="38" count="90" type="stmt"/>
-        <line num="39" count="90" type="stmt"/>
-        <line num="40" count="90" type="stmt"/>
-        <line num="41" count="25" type="stmt"/>
-        <line num="42" count="25" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="46" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="49" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="50" count="2" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="52" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="55" count="5" type="stmt"/>
-        <line num="56" count="5" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-      </file>
-      <file name="parser.js" path="/home/username_bolivarli/frontend-project-46/src/parser.js">
-        <metrics statements="21" coveredstatements="21" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="10" type="stmt"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="6" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="8" count="5" type="stmt"/>
-        <line num="9" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="10" type="stmt"/>
-        <line num="19" count="10" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
       </file>
     </package>
   </project>

@@ -1,21 +1,19 @@
 import yaml from 'js-yaml';
 
 const parseData = (data, format) => {
-  let parsingDate;
+  let parsedData;
   switch (format) {
     case '.json':
-      parsingDate = JSON.parse(data);
-      return parsingDate;
+      parsedData = JSON.parse(data);
+      break;
     case '.yml':
-      parsingDate = yaml.load(data);
-      return parsingDate;
     case '.yaml':
-      parsingDate = yaml.load(data);
-      return parsingDate;
+      parsedData = yaml.load(data);
+      break;
     default:
-      console.log('Unknown format:', format);
-      return null;
+      throw new Error(`Unknown format: ${format}`);
   }
+  return parsedData;
 };
 
 export default parseData;

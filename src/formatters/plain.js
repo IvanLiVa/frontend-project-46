@@ -34,8 +34,10 @@ const formatPlain = (diff) => {
         case 'nested':
           iter(item.children, currentPath);
           break;
-        default:
+        case 'unchanged':
           break;
+        default:
+          throw new Error(`Unknown type: ${item.type}`);
       }
     });
   };

@@ -1,3 +1,16 @@
+# JSON Diff Utility
+
+This utility calculates the difference between two data structures, supporting various input formats such as JSON and YAML. It generates reports in plain text, stylish, and JSON formats.
+
+## Features
+
+- Supports input formats: JSON, YAML
+- Generates reports in plain text, stylish, and JSON formats
+- Provides a command-line interface for easy use
+- Supports recursive comparison of files and directories
+
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/IvanLiVa/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/IvanLiVa/frontend-project-46/actions)
 

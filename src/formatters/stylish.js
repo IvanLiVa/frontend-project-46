@@ -36,8 +36,7 @@ const stylish = (diff, depth = 1) => {
       case 'nested':
         return `${currentIndent}  ${node.key}: ${stylish(node.children, depth + 1)}`;
       default:
-        console.log(`Unknown type: ${node.type}`);
-        return null;
+        throw new Error(`Unknown type: ${node.type}`);
     }
   });
 
