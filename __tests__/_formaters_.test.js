@@ -2,28 +2,22 @@ import stylish from '../src/formatters/stylish.js';
 import formatPlain from '../src/formatters/plain.js';
 import genDiff from '../src/index.js';
 
+const diffWithUnknownType = [
+  {
+    key: 'someKey',
+    type: 'unknownType',
+    value: 'someValue',
+  },
+];
+
 describe('should throw an error for unknown type', () => {
   test('stylish  for unknown type', () => {
-    const diffWithUnknownType = [
-      {
-        key: 'someKey',
-        type: 'unknownType',
-        value: 'someValue',
-      },
-    ];
     expect(() => {
       stylish(diffWithUnknownType);
     }).toThrow('Unknown type: unknownType');
   });
 
   test('plain  for unknown type', () => {
-    const diffWithUnknownType = [
-      {
-        key: 'someKey',
-        type: 'unknownType',
-        value: 'someValue',
-      },
-    ];
     expect(() => {
       formatPlain(diffWithUnknownType);
     }).toThrow('Unknown type: unknownType');
